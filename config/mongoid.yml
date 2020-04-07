@@ -166,8 +166,7 @@ test:
 production:
   clients:
     default:
-      database: databanx_test_production
-      uri: <%= ENV['MONGODB_URI'] %>
+      database: <%= ENV['MONGODB_URI'] %>
     options:
       skip_version_check: true
       safe: true
