@@ -166,11 +166,7 @@ test:
 production:
   clients:
     default:
-      hosts:
-        - <%= ENV['MONGODB_URI'] %>
-      database: heroku_65w9rzxj
-      username: heroku_65w9rzxj
-      password: j2qeifc2aj1il1btf07p5jrio3
+      uri: <%= ENV['MONGODB_URI'] %>
       options:
         skip_version_check: true
         safe: true
