@@ -1,19 +1,35 @@
-# README
+# Databanx-test App
 
-* Ruby version
-`2.7.1`
-* System dependencies
-Rails version: `6.0.2.2`
-* Configuration
+### Setup
 
-* Database creation
+```bash
+git@github.com:hussainakram/databanx-test.git
+cd databanx-test
+```
 
-* Database initialization
+### Check your Ruby version
 
-* How to run the test suite
+```shell
+ruby -v
+```
+The output should be like **ruby 2.7.1**
 
-* Services (job queues, cache servers, search engines, etc.)
+### Check your Ruby version
 
-* Deployment instructions
+```shell
+rails -v
+```
+The output should be **Rails 6.0.2.2**
+### Install dependencies
 
-* ...
+Using [Bundler](https://github.com/bundler/bundler) and [Yarn](https://github.com/yarnpkg/yarn):
+
+```shell
+bundle && yarn
+```
+
+### Serve
+
+```shell
+rails s
+```
