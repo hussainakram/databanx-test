@@ -1,0 +1,9 @@
+p
+  strong Title:
+  = @post.title
+p
+  strong Body:
+  = @post.body
+
+=> link_to 'Edit', edit_post_path(@post), class: "btn btn-warning"
+=< link_to 'Back', posts_path, class: "btn btn-info"

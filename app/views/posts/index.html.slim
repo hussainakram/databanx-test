@@ -1,0 +1,23 @@
+h1 Listing posts
+
+table.table.responsive
+  thead
+    tr
+      th Title
+      th Body
+      th
+      th
+      th
+
+  tbody
+    - @posts.each do |post|
+      tr
+        td = post.title
+        td = post.body
+        td = link_to 'Show', post, class: "btn btn-sm btn-info"
+        td = link_to 'Edit', edit_post_path(post), class: "btn btn-sm btn-warning"
+        td = link_to 'Destroy', post, data: { confirm: 'Are you sure?' }, method: :delete, class: "btn btn-sm btn-danger"
+
+br
+= paginate @posts, theme: 'twitter-bootstrap-4'
+= link_to 'New Post', new_post_path, class: "btn btn-primary"
