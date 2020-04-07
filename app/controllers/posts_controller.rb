@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   rescue_from Pundit::NotAuthorizedError, with: :render_user_unauthorized
 
   def index
-    @posts = Post.all.page(params[:page]).per(10)
+    @posts = Post.all.order(created_at: :desc).page(params[:page]).per(10)
   end
 
   def show
