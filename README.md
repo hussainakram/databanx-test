@@ -14,7 +14,7 @@ ruby -v
 ```
 The output should be like **ruby 2.7.1**
 
-### Check your Ruby version
+### Check your Rails version
 
 ```shell
 rails -v
